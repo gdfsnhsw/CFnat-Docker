@@ -14,6 +14,7 @@ if [ ! -f /config/locations.json ]; then
 fi
 
 if [ "${coloip}" = "true" ] && [ "${ips}" = "4" ] && [ ! -f /config/ip.csv ]; then
+    cp /app/ips-v4.txt /config/ips-v4.txt 
     /app/colo \
         -random "${random}" \
         -task "${task}"
