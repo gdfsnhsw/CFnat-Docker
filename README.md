@@ -14,7 +14,7 @@
         ports:
           - "1234:1234"  # 将主机的 1234 端口映射到容器的 1234 端口
         environment:
-          - colo=HKG,SJC,LAX  # 筛选数据中心例如 HKG,SJC,LAX.电信 推荐 SJC,LAX.移动/联通 推荐 HKG"
+          - colo=HKG,SJC,LAX  # 筛选数据中心例如 HKG,SJC,LAX.电信/联通 推荐 SJC,LAX.移动/广电 推荐 HKG"
           - delay=300  # 有效延迟（毫秒），超过此延迟将断开连接
           - domain=cloudflaremirrors.com/debian  # 响应状态码检查的域名地址
           - code=200  # 默认HTTP/HTTPS 响应状态码
